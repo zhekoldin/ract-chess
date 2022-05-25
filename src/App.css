@@ -3,3 +3,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
