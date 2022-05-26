@@ -1,11 +1,34 @@
-.main {
+* {
+    margin: 0;
+    padding: 0;
+}
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(64px*8);
+    height: calc(64px*8);
+}
+
+.cell {
+    width: 64px;
+    height: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.desc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.black {
+    background-color: rgb(15, 150, 196);
+}
+
+.white {
+    background-color: rgb(221, 192, 139);
 }
