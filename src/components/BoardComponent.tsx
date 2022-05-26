@@ -1,6 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
+import { Board } from "../models/Board";
 
-const BoardComponent = () => {
+interface BoardProps {
+    board: Board;
+    setBoard: (board: Board) => void;
+}
+
+const BoardComponent: FC<BoardProps> = ({board, setBoard}) => {
     return (
         <div
         className="board">
